@@ -23,6 +23,57 @@ npm install
 npm run build
 ```
 
+## Quickstart (Build & Run)
+
+Follow these steps to build and run the MCP server locally.
+
+1. Install dependencies and build the project:
+
+```bash
+npm install
+npm run build
+```
+
+2. Start the server (uses the compiled files in `dist`):
+
+```bash
+npm start
+```
+
+3. The server writes MCP communication to `stdout` and logs to `stderr`.
+
+Environment variable tips:
+
+- Default LM Studio URL: `http://localhost:1234`.
+- To use a custom LM Studio URL, set `LM_STUDIO_BASE_URL` before starting.
+
+PowerShell (Windows) example:
+
+```powershell
+$env:LM_STUDIO_BASE_URL = "http://localhost:1234"
+npm start
+```
+
+Command Prompt (Windows) example:
+
+```cmd
+set LM_STUDIO_BASE_URL=http://localhost:1234 && npm start
+```
+
+macOS / Linux example:
+
+```bash
+LM_STUDIO_BASE_URL="http://localhost:1234" npm start
+```
+
+Development workflow:
+
+- Rebuild on change (in one terminal): `npm run watch`
+- Run the server (in another terminal): `npm run dev` (starts Node with the inspector)
+
+You can also run the compiled script directly with `node dist/index.js` if preferred.
+
+
 ## Configuration
 
 ### LM Studio Setup
