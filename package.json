@@ -24,7 +24,7 @@
   "author": "seajhawk",
   "license": "MIT",
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.0.4"
+    "@modelcontextprotocol/sdk": "^1.24.0"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",
